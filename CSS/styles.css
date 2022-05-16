@@ -40,18 +40,10 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
   }
-  
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px 100px;
 
-}
-
-.phone {
+  .phone {
     top: 10px;
     left: 10px;
     position: absolute;
@@ -60,16 +52,37 @@ main {
 
 }
 
+title-container {
+    position: absolute;
+}
+
 .hero-title {
-    font-size: 3rem;
+    display: block;
+    font-size: 10rem;
+    align-self: flex-end;
+    margin: 0;
+    padding-top: 0;
+}
+
+.hero-subtitle {
+    display: block;
+    font-size: 3.5rem;
+    padding-top: 0;
+    margin:0;
 }
 
 .hero-text {
     text-align: center;
     color: white;
 }
-
   
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 100px;
+}
 @media screen and (max-width: 768px) {
     .hero-text {
         font-size: .8rem;
@@ -77,6 +90,9 @@ main {
 
     .hero-title {
         font-size: 2rem;
+    }
+    .hero-subtitle {
+        font-size: .8rem;
     }
     
 }
